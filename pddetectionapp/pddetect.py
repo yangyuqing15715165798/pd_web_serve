@@ -120,9 +120,15 @@ async def PD_detect(new_data):
     return predictions
 
 
+# 同步版本的PD_detect函数，用于直接测试
+def PD_detect_sync(new_data):
+    return asyncio.run(PD_detect(new_data))
+
+
 if __name__ == "__main__":
     data = pd.read_excel("pddetectionapp/models/shu.xlsx").values
-    PD_detect(data)
+    result = PD_detect_sync(data)
+    print("预测结果为：", result)
 
 
 app = FastAPI(title="局部放电检测系统")
