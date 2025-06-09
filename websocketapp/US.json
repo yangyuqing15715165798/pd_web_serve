@@ -1,0 +1,685 @@
+{
+    "US_FEATURES": {
+        "Info": {
+            "map_type_code": {
+                "type": "INT",
+                "b_length": 1,
+                "index": [
+                    0,
+                    0
+                ]
+            },
+            "map_data_length": {
+                "type": "BIGINT",
+                "b_length": 4,
+                "index": [
+                    1,
+                    4
+                ]
+            },
+            "map_generation_time": {
+                "type": "BIGINT",
+                "b_length": 8,
+                "index": [
+                    5,
+                    12
+                ]
+            },
+            "map_property": {
+                "type": "INT",
+                "b_length": 1,
+                "index": [
+                    13,
+                    13
+                ]
+            },
+            "device_name": {
+                "type": "VARCHAR",
+                "b_length": 118,
+                "index": [
+                    14,
+                    131
+                ],
+                "coding": "ASCII"
+            },
+            "device_code": {
+                "type": "VARCHAR",
+                "b_length": 42,
+                "index": [
+                    132,
+                    173
+                ]
+            },
+            "measure_position_name": {
+                "type": "VARCHAR",
+                "b_length": 128,
+                "index": [
+                    174,
+                    301
+                ],
+                "coding": "UNICODE"
+            },
+            "measure_position_code": {
+                "type": "VARCHAR",
+                "b_length": 32,
+                "index": [
+                    302,
+                    333
+                ],
+                "coding": "ASCII"
+            },
+            "detection_channel_marker": {
+                "type": "INT",
+                "b_length": 2,
+                "index": [
+                    334,
+                    335
+                ]
+            },
+            "stored_data_type": {
+                "type": "INT",
+                "b_length": 1,
+                "index": [
+                    336,
+                    336
+                ]
+            },
+            "amplitude_unit": {
+                "type": "INT",
+                "b_length": 1,
+                "index": [
+                    337,
+                    337
+                ]
+            },
+            "amplitude_low_limit": {
+                "type": "FLOAT",
+                "b_length": 4,
+                "index": [
+                    338,
+                    341
+                ]
+            },
+            "amplitude_high_limit": {
+                "type": "FLOAT",
+                "b_length": 4,
+                "index": [
+                    342,
+                    345
+                ]
+            },
+            "ultrasonic_sensor_type": {
+                "type": "INT",
+                "b_length": 1,
+                "index": [
+                    346,
+                    346
+                ]
+            },
+            "data_point_counts": {
+                "type": "FLOAT",
+                "b_length": 4,
+                "index": [
+                    347,
+                    350
+                ]
+            },
+            "test_frequency": {
+                "type": "FLOAT",
+                "b_length": 4,
+                "index": [
+                    351,
+                    354
+                ]
+            },
+            "discharge_type_probability": {
+                "type": "JSON",
+                "b_length": 20,
+                "index": [
+                    355,
+                    362
+                ]
+            },
+            "signal_peak": {
+                "type": "FLOAT",
+                "b_length": 4,
+                "index": [
+                    363,
+                    366
+                ]
+            },
+            "signal_valid": {
+                "type": "FLOAT",
+                "b_length": 4,
+                "index": [
+                    367,
+                    370
+                ]
+            },
+            "frequency1_corr": {
+                "type": "FLOAT",
+                "b_length": 4,
+                "index": [
+                    371,
+                    374
+                ]
+            },
+            "frequency2_corr": {
+                "type": "FLOAT",
+                "b_length": 4,
+                "index": [
+                    375,
+                    378
+                ]
+            },
+            "frequency_band": {
+                "type": "INT",
+                "b_length": 1,
+                "index": [
+                    379,
+                    379
+                ]
+            },
+            "frequency_low_limit": {
+                "type": "FLOAT",
+                "b_length": 4,
+                "index": [
+                    380,
+                    383
+                ]
+            },
+            "frequency_high_limit": {
+                "type": "FLOAT",
+                "b_length": 4,
+                "index": [
+                    384,
+                    387
+                ]
+            },
+            "background_file": {
+                "type": "VARCHAR",
+                "b_length": 54,
+                "index": [
+                    388,
+                    441
+                ],
+                "coding": "ASCII"
+            },
+            "reserve_2": {
+                "type": "VARCHAR",
+                "b_length": 70,
+                "index": [
+                    442,
+                    511
+                ]
+            }
+        }
+    },
+    "US_PHASE": {
+        "Info": {
+            "map_type_code": {
+                "type": "INT",
+                "b_length": 1,
+                "index": [
+                    0,
+                    0
+                ]
+            },
+            "map_data_length": {
+                "type": "BIGINT",
+                "b_length": 4,
+                "index": [
+                    1,
+                    4
+                ]
+            },
+            "map_generation_time": {
+                "type": "BIGINT",
+                "b_length": 8,
+                "index": [
+                    5,
+                    12
+                ]
+            },
+            "map_property": {
+                "type": "INT",
+                "b_length": 1,
+                "index": [
+                    13,
+                    13
+                ]
+            },
+            "device_name": {
+                "type": "VARCHAR",
+                "b_length": 118,
+                "index": [
+                    14,
+                    131
+                ]
+            },
+            "device_code": {
+                "type": "VARCHAR",
+                "b_length": 42,
+                "index": [
+                    132,
+                    173
+                ]
+            },
+            "measure_position_name": {
+                "type": "VARCHAR",
+                "b_length": 128,
+                "index": [
+                    174,
+                    301
+                ]
+            },
+            "measure_position_code": {
+                "type": "VARCHAR",
+                "b_length": 32,
+                "index": [
+                    302,
+                    333
+                ]
+            },
+            "detection_channel_marker": {
+                "type": "INT",
+                "b_length": 2,
+                "index": [
+                    334,
+                    335
+                ]
+            },
+            "stored_data_type": {
+                "type": "INT",
+                "b_length": 1,
+                "index": [
+                    336,
+                    336
+                ]
+            },
+            "amplitude_unit": {
+                "type": "INT",
+                "b_length": 1,
+                "index": [
+                    337,
+                    337
+                ]
+            },
+            "amplitude_low_limit": {
+                "type": "FLOAT",
+                "b_length": 4,
+                "index": [
+                    338,
+                    341
+                ]
+            },
+            "amplitude_high_limit": {
+                "type": "FLOAT",
+                "b_length": 4,
+                "index": [
+                    342,
+                    345
+                ]
+            },
+            "ultrasonic_sensor_type": {
+                "type": "INT",
+                "b_length": 1,
+                "index": [
+                    346,
+                    346
+                ]
+            },
+            "data_point_counts": {
+                "type": "INT",
+                "b_length": 4,
+                "index": [
+                    347,
+                    350
+                ]
+            },
+            "discharge_type_probability": {
+                "type": "JSON",
+                "b_length": 20,
+                "index": [
+                    351,
+                    358
+                ]
+            },
+            "reserve_2":{
+                "type": "VARCHAR",
+                "b_length": 153,
+                "index": [
+                    359,
+                    511
+                ]
+            }
+ 
+        },
+        "Sampledata": {
+            "phase_data": {
+                "type": "INT",
+                "b_length": 4
+            }
+        }
+    },
+    "US_PULSE_MAP": {
+        "Info": {
+            "map_type": {
+                "type": "INT",
+                "b_length": 1,
+                "index": [
+                    0,
+                    0
+                ]
+            },
+            "map_data_length": {
+                "type": "INT",
+                "b_length": 4,
+                "index": [
+                    1,
+                    4
+                ]
+            },
+            "map_created_time": {
+                "type": "BIGINT",
+                "b_length": 8,
+                "index": [
+                    5,
+                    12
+                ]
+            },
+            "map_property": {
+                "type": "INT",
+                "b_length": 1,
+                "index": [
+                    13,
+                    13
+                ]
+            },
+            "device_name": {
+                "type": "VARCHAR",
+                "b_length": 118,
+                "index": [
+                    14,
+                    131
+                ],
+                "coding": "UNICODE"
+            },
+            "device_code": {
+                "type": "VARCHAR",
+                "b_length": 42,
+                "index": [
+                    132,
+                    173
+                ],
+                "coding": "ASCII"
+            },
+            "measure_position_name": {
+                "type": "VARCHAR",
+                "b_length": 128,
+                "index": [
+                    174,
+                    301
+                ],
+                "coding": "UNICODE"
+            },
+            "measure_position_code": {
+                "type": "VARCHAR",
+                "b_length": 32,
+                "index": [
+                    302,
+                    333
+                ],
+                "coding": "ASCII"
+            },
+            "detection_channel_marker": {
+                "type": "INT",
+                "b_length": 2,
+                "index": [
+                    334,
+                    335
+                ]
+            },
+            "stored_data_type": {
+                "type": "INT",
+                "b_length": 1,
+                "index": [
+                    336,
+                    336
+                ]
+            },
+            "amplitude_unit": {
+                "type": "INT",
+                "b_length": 1,
+                "index": [
+                    337,
+                    337
+                ]
+            },
+            "amplitude_low_limit": {
+                "type": "FLOAT",
+                "b_length": 4,
+                "index": [
+                    338,
+                    341
+                ]
+            },
+            "amplitude_high_limit": {
+                "type": "FLOAT",
+                "b_length": 4,
+                "index": [
+                    342,
+                    345
+                ]
+            },
+            "ultrasonic_sensor_type": {
+                "type": "INT",
+                "b_length": 1,
+                "index": [
+                    346,
+                    346
+                ]
+            },
+            "pulse_interval_time_unit": {
+                "type": "INT",
+                "b_length": 1,
+                "index": [
+                    347,
+                    347
+                ]
+            },
+            "data_point_counts": {
+                "type": "INT",
+                "b_length": 4,
+                "index": [
+                    348,
+                    351
+                ]
+            },
+            "discharge_type_probability": {
+                "type": "JSON",
+                "b_length": 20,
+                "index": [
+                    352,
+                    359
+                ]
+            },
+            "reserved_place": {
+                "type": "VARCHAR",
+                "b_length": 152,
+                "index": [
+                    360,
+                    511
+                ]
+            }
+        },
+        "Sampledata": {
+            "pulse_date": {
+                "type": "FLOAT",
+                "b_length": 4
+            },
+            "pulse_data": {
+                "type": "FLOAT",
+                "b_length": 4
+            }
+        }
+    },
+    "US_WAVEFORM_MAP": {
+        "Info": {
+            "map_type": {
+                "type": "INT",
+                "b_length": 1,
+                "index": [
+                    0,
+                    0
+                ]
+            },
+            "map_data_length": {
+                "type": "INT",
+                "b_length": 4,
+                "index": [
+                    1,
+                    4
+                ]
+            },
+            "map_created_time": {
+                "type": "BIGINT",
+                "b_length": 8,
+                "index": [
+                    5,
+                    12
+                ]
+            },
+            "map_property": {
+                "type": "INT",
+                "b_length": 1,
+                "index": [
+                    13,
+                    13
+                ]
+            },
+            "device_name": {
+                "type": "VARCHAR",
+                "b_length": 118,
+                "index": [
+                    14,
+                    131
+                ],
+                "coding": "UNICODE"
+            },
+            "device_code": {
+                "type": "VARCHAR",
+                "b_length": 42,
+                "index": [
+                    132,
+                    173
+                ],
+                "coding": "ASCII"
+            },
+            "measure_position_name": {
+                "type": "VARCHAR",
+                "b_length": 128,
+                "index": [
+                    174,
+                    301
+                ],
+                "coding": "UNICODE"
+            },
+            "measure_position_code": {
+                "type": "VARCHAR",
+                "b_length": 32,
+                "index": [
+                    302,
+                    333
+                ],
+                "coding": "ASCII"
+            },
+            "detection_channel_marker": {
+                "type": "INT",
+                "b_length": 2,
+                "index": [
+                    334,
+                    335
+                ]
+            },
+            "stored_data_type": {
+                "type": "INT",
+                "b_length": 1,
+                "index": [
+                    336,
+                    336
+                ]
+            },
+            "amplitude_unit": {
+                "type": "INT",
+                "b_length": 1,
+                "index": [
+                    337,
+                    337
+                ]
+            },
+            "amplitude_low_limit": {
+                "type": "FLOAT",
+                "b_length": 4,
+                "index": [
+                    338,
+                    341
+                ]
+            },
+            "amplitude_high_limit": {
+                "type": "FLOAT",
+                "b_length": 4,
+                "index": [
+                    342,
+                    345
+                ]
+            },
+            "ultrasonic_sensor_type": {
+                "type": "INT",
+                "b_length": 1,
+                "index": [
+                    346,
+                    346
+                ]
+            },
+            "data_point_counts": {
+                "type": "INT",
+                "b_length": 4,
+                "index": [
+                    347,
+                    350
+                ]
+            },
+            "sampling_rate": {
+                "type": "BIGINT",
+                "b_length": 8,
+                "index": [
+                    351,
+                    358
+                ]
+            },
+            "discharge_type_probability": {
+                "type": "JSON",
+                "b_length": 20,
+                "index": [
+                    359,
+                    366
+                ]
+            },
+            "reserved_place": {
+                "type": "VARCHAR",
+                "b_length": 145,
+                "index": [
+                    367,
+                    511
+                ]
+            }
+        },
+        "Sampledata": {
+            "waveform_data": {
+                "type": "FLOAT",
+                "b_length": 4
+            }
+        }
+    }
+}

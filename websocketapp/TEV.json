@@ -1,0 +1,154 @@
+{
+    "TEV_VOLTAGE": {
+        "Info": {
+            "map_type_code": {
+                "type": "INT",
+                "b_length": 1,
+                "index": [
+                    0,
+                    0
+                ]
+            },
+            "map_data_length": {
+                "type": "BIGINT",
+                "b_length": 4,
+                "index": [
+                    1,
+                    4
+                ]
+            },
+            "map_generation_time": {
+                "type": "BIGINT",
+                "b_length": 8,
+                "index": [
+                    5,
+                    12
+                ]
+            },
+            "map_property": {
+                "type": "INT",
+                "b_length": 1,
+                "index": [
+                    13,
+                    13
+                ]
+            },
+            "device_name": {
+                "type": "VARCHAR",
+                "b_length": 118,
+                "index": [
+                    14,
+                    131
+                ],
+                "coding": "ASCII"
+            },
+            "device_code": {
+                "type": "VARCHAR",
+                "b_length": 42,
+                "index": [
+                    132,
+                    173
+                ]
+            },
+            "measure_position_name": {
+                "type": "VARCHAR",
+                "b_length": 128,
+                "index": [
+                    174,
+                    301
+                ],
+                "coding": "UNICODE"
+            },
+            "measure_position_code": {
+                "type": "VARCHAR",
+                "b_length": 32,
+                "index": [
+                    302,
+                    333
+                ],
+                "coding": "ASCII"
+            },
+            "detection_channel_marker": {
+                "type": "INT",
+                "b_length": 2,
+                "index": [
+                    334,
+                    335
+                ]
+            },
+            "stored_data_type": {
+                "type": "INT",
+                "b_length": 1,
+                "index": [
+                    336,
+                    336
+                ]
+            },
+            "amplitude_unit": {
+                "type": "INT",
+                "b_length": 1,
+                "index": [
+                    337,
+                    337
+                ]
+            },
+            "amplitude_low_limit": {
+                "type": "FLOAT",
+                "b_length": 4,
+                "index": [
+                    338,
+                    341
+                ]
+            },
+            "amplitude_high_limit": {
+                "type": "FLOAT",
+                "b_length": 4,
+                "index": [
+                    342,
+                    345
+                ]
+            },
+            "tvd_amplitude_value": {
+                "type": "FLOAT",
+                "b_length": 4,
+                "index": [
+                    346,
+                    349
+                ]
+            },
+            "tvd_max_amplitude_value": {
+                "type": "FLOAT",
+                "b_length": 4,
+                "index": [
+                    350,
+                    353
+                ]
+            },
+            "pulse_counts": {
+                "type": "INT",
+                "b_length": 4,
+                "index": [
+                    354,
+                    357
+                ]
+            },
+            "background_file": {
+                "type": "VARCHAR",
+                "b_length": 54,
+                "index": [
+                    358,
+                    411
+                ],
+                "coding": "ASCII"
+            },
+            "reserve_1": {
+                "type": "VARCHAR",
+                "b_length": 100,
+                "index": [
+                    412,
+                    511
+                ]
+            }
+        }
+    }
+}

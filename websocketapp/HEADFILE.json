@@ -1,0 +1,128 @@
+{"HEAD_FILE": {
+        "file_length": {
+            "type": "INT",
+            "b_length": 4,
+            "index": [
+                0,
+                3
+            ]
+        },
+        "version_num": {
+            "type": "VARCHAR",
+            "b_length": 32,
+            "index": [
+                4,
+                7
+            ]
+        },
+        "file_generation_time": {
+            "type": "BIGINT",
+            "b_length": 8,
+            "index": [
+                8,
+                15
+            ]
+        },
+        "site_name": {
+            "type": "VARCHAR",
+            "b_length": 128,
+            "index": [
+                16,
+                143
+            ],
+            "coding": "UNICODE"
+        },
+        "site_code": {
+            "type": "VARCHAR",
+            "b_length": 32,
+            "index": [
+                144,
+                175
+            ],
+            "coding": "ASCII"
+        },
+        "weather": {
+            "type": "INT",
+            "b_length": 1,
+            "index": [
+                176,
+                176
+            ]
+        },
+        "temperature": {
+            "type": "FLOAT",
+            "b_length": 4,
+            "index": [
+                177,
+                180
+            ]
+        },
+        "humidness": {
+            "type": "INT",
+            "b_length": 1,
+            "index": [
+                181,
+                181
+            ]
+        },
+        "instrument_factory": {
+            "type": "VARCHAR",
+            "b_length": 32,
+            "index": [
+                182,
+                213
+            ],
+            "coding": "UNICODE"
+        },
+        "instrument_type": {
+            "type": "VARCHAR",
+            "b_length": 32,
+            "index": [
+                214,
+                245
+            ],
+            "coding": "UNICODE"
+        },
+        "instrument_version_number": {
+            "type": "VARCHAR",
+            "b_length": 32,
+            "index": [
+                246,
+                249
+            ]
+        },
+        "instrument_serial_number": {
+            "type": "VARCHAR",
+            "b_length": 32,
+            "index": [
+                250,
+                281
+            ],
+            "coding": "ASCII"
+        },
+        "system_frequency": {
+            "type": "FLOAT",
+            "b_length": 4,
+            "index": [
+                282,
+                285
+            ]
+        },
+        "map_quantity": {
+            "type": "INT",
+            "b_length": 2,
+            "index": [
+                286,
+                287
+            ]
+        },
+        "reserve_1": {
+            "type": "VARCHAR",
+            "b_length": 224,
+            "index": [
+                288,
+                511
+            ]
+        }
+    }
+}

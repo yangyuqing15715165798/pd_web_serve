@@ -1,0 +1,577 @@
+{
+  "HF_PRPD": {
+    "Info": {
+      "map_type_code": {
+        "type": "INT",
+        "b_length": 1,
+        "index": [
+          0,
+          0
+        ]
+      },
+      "map_data_length": {
+        "type": "BIGINT",
+        "b_length": 4,
+        "index": [
+          1,
+          4
+        ]
+      },
+      "map_generation_time": {
+        "type": "BIGINT",
+        "b_length": 8,
+        "index": [
+          5,
+          12
+        ]
+      },
+      "map_property": {
+        "type": "INT",
+        "b_length": 1,
+        "index": [
+          13,
+          13
+        ]
+      },
+      "device_name": {
+        "type": "VARCHAR",
+        "b_length": 118,
+        "index": [
+          14,
+          131
+        ],
+        "coding": "ASCII"
+      },
+      "device_code": {
+        "type": "VARCHAR",
+        "b_length": 42,
+        "index": [
+          132,
+          173
+        ]
+      },
+      "station_name": {
+        "type": "VARCHAR",
+        "b_length": 128,
+        "index": [
+          174,
+          301
+        ],
+        "coding": "UNICODE"
+      },
+      "station_code": {
+        "type": "VARCHAR",
+        "b_length": 32,
+        "index": [
+          302,
+          333
+        ],
+        "coding": "ASCII"
+      },
+      "detection_channel_marker": {
+        "type": "INT",
+        "b_length": 2,
+        "index": [
+          334,
+          335
+        ]
+      },
+      "stored_data_type": {
+        "type": "INT",
+        "b_length": 1,
+        "index": [
+          336,
+          336
+        ]
+      },
+      "amplitude_unit": {
+        "type": "INT",
+        "b_length": 1,
+        "index": [
+          337,
+          337
+        ]
+      },
+      "amplitude_low_limit": {
+        "type": "FLOAT",
+        "b_length": 4,
+        "index": [
+          338,
+          341
+        ]
+      },
+      "amplitude_high_limit": {
+        "type": "FLOAT",
+        "b_length": 4,
+        "index": [
+          342,
+          345
+        ]
+      },
+      "frequency_band": {
+        "type": "INT",
+        "b_length": 1,
+        "index": [
+          346,
+          346
+        ]
+      },
+      "frequency_low_limit": {
+        "type": "FLOAT",
+        "b_length": 4,
+        "index": [
+          347,
+          350
+        ]
+      },
+      "frequency_high_limit": {
+        "type": "FLOAT",
+        "b_length": 4,
+        "index": [
+          351,
+          354
+        ]
+      },
+      "phase_window_number": {
+        "type": "INT",
+        "b_length": 4,
+        "index": [
+          355,
+          358
+        ]
+      },
+      "quantization_amplitude": {
+        "type": "INT",
+        "b_length": 4,
+        "index": [
+          359,
+          362
+        ]
+      },
+      "power_frequency_cycle": {
+        "type": "INT",
+        "b_length": 4,
+        "index": [
+          363,
+          366
+        ]
+      },
+      "discharge_type_probability": {
+        "type": "JSON",
+        "b_length": 20,
+        "index": [
+          367,
+          374
+        ]
+      },
+      "background_file": {
+        "type": "VARCHAR",
+        "b_length": 54,
+        "index": [
+          375,
+          428
+        ],
+        "coding": "ASCII"
+      },
+      "reserve_2": {
+        "type": "VARCHAR",
+        "b_length": 83,
+        "index": [
+          429,
+          511
+        ]
+      }
+    },
+    "Sampledata": {
+      "pulse_date": {
+        "type": "FLOAT",
+        "b_length": 4
+      }
+    }
+  },
+  "HF_PRPS": {
+    "Info": {
+      "map_type_code": {
+        "type": "INT",
+        "b_length": 1,
+        "index": [
+          0,
+          0
+        ]
+      },
+      "map_data_length": {
+        "type": "BIGINT",
+        "b_length": 4,
+        "index": [
+          1,
+          4
+        ]
+      },
+      "map_generation_time": {
+        "type": "BIGINT",
+        "b_length": 8,
+        "index": [
+          5,
+          12
+        ]
+      },
+      "map_property": {
+        "type": "INT",
+        "b_length": 1,
+        "index": [
+          13,
+          13
+        ]
+      },
+      "device_name": {
+        "type": "VARCHAR",
+        "b_length": 118,
+        "index": [
+          14,
+          131
+        ]
+      },
+      "device_code": {
+        "type": "VARCHAR",
+        "b_length": 42,
+        "index": [
+          132,
+          173
+        ]
+      },
+      "station_name": {
+        "type": "VARCHAR",
+        "b_length": 128,
+        "index": [
+          174,
+          301
+        ]
+      },
+      "station_code": {
+        "type": "VARCHAR",
+        "b_length": 32,
+        "index": [
+          302,
+          333
+        ]
+      },
+      "detection_channel_marker": {
+        "type": "INT",
+        "b_length": 2,
+        "index": [
+          334,
+          335
+        ]
+      },
+      "stored_data_type": {
+        "type": "INT",
+        "b_length": 1,
+        "index": [
+          336,
+          336
+        ]
+      },
+      "amplitude_unit": {
+        "type": "INT",
+        "b_length": 1,
+        "index": [
+          337,
+          337
+        ]
+      },
+      "amplitude_low_limit": {
+        "type": "FLOAT",
+        "b_length": 4,
+        "index": [
+          338,
+          341
+        ]
+      },
+      "amplitude_high_limit": {
+        "type": "FLOAT",
+        "b_length": 4,
+        "index": [
+          342,
+          345
+        ]
+      },
+      "frequency_band": {
+        "type": "INT",
+        "b_length": 1,
+        "index": [
+          346,
+          346
+        ]
+      },
+      "frequency_low_limit": {
+        "type": "FLOAT",
+        "b_length": 4,
+        "index": [
+          347,
+          350
+        ]
+      },
+      "frequency_high_limit": {
+        "type": "FLOAT",
+        "b_length": 4,
+        "index": [
+          351,
+          354
+        ]
+      },
+      "phase_window_number": {
+        "type": "INT",
+        "b_length": 4,
+        "index": [
+          355,
+          358
+        ]
+      },
+      "quantization_amplitude": {
+        "type": "INT",
+        "b_length": 4,
+        "index": [
+          359,
+          362
+        ]
+      },
+      "power_frequency_cycle": {
+        "type": "INT",
+        "b_length": 4,
+        "index": [
+          363,
+          366
+        ]
+      },
+      "discharge_type_probability": {
+        "type": "JSON",
+        "b_length": 20,
+        "index": [
+          367,
+          374
+        ]
+      },
+      "background_file": {
+        "type": "VARCHAR",
+        "b_length": 54,
+        "index": [
+          375,
+          428
+        ],
+        "coding": "ASCII"
+      },
+      "reserve_3": {
+        "type": "VARCHAR",
+        "b_length": 83,
+        "index": [
+          429,
+          511
+        ]
+      }
+    },
+    "Sampledata": {
+      "pulse_date": {
+        "type": "FLOAT",
+        "b_length": 4
+      },
+      "pulse_data": {
+        "type": "INT",
+        "b_length": 4
+      }
+    }
+  },
+  "HF_PULSE_WAVEFORM": {
+    "Info": {
+      "map_type": {
+        "type": "INT",
+        "b_length": 1,
+        "index": [
+          0,
+          0
+        ]
+      },
+      "map_data_length": {
+        "type": "INT",
+        "b_length": 4,
+        "index": [
+          1,
+          4
+        ]
+      },
+      "map_created_time": {
+        "type": "BIGINT",
+        "b_length": 8,
+        "index": [
+          5,
+          12
+        ]
+      },
+      "map_property": {
+        "type": "INT",
+        "b_length": 1,
+        "index": [
+          13,
+          13
+        ]
+      },
+      "device_name": {
+        "type": "VARCHAR",
+        "b_length": 118,
+        "index": [
+          14,
+          131
+        ],
+        "coding": "UNICODE"
+      },
+      "device_code": {
+        "type": "VARCHAR",
+        "b_length": 42,
+        "index": [
+          132,
+          173
+        ],
+        "coding": "ASCII"
+      },
+      "measure_position_name": {
+        "type": "VARCHAR",
+        "b_length": 128,
+        "index": [
+          174,
+          301
+        ],
+        "coding": "UNICODE"
+      },
+      "measure_position_code": {
+        "type": "VARCHAR",
+        "b_length": 32,
+        "index": [
+          302,
+          333
+        ],
+        "coding": "ASCII"
+      },
+      "detection_channel_marker": {
+        "type": "INT",
+        "b_length": 2,
+        "index": [
+          334,
+          335
+        ]
+      },
+      "stored_data_type": {
+        "type": "INT",
+        "b_length": 1,
+        "index": [
+          336,
+          336
+        ]
+      },
+      "amplitude_unit": {
+        "type": "INT",
+        "b_length": 1,
+        "index": [
+          337,
+          337
+        ]
+      },
+      "amplitude_low_limit": {
+        "type": "FLOAT",
+        "b_length": 4,
+        "index": [
+          338,
+          341
+        ]
+      },
+      "amplitude_high_limit": {
+        "type": "FLOAT",
+        "b_length": 4,
+        "index": [
+          342,
+          345
+        ]
+      },
+      "frequency_band": {
+        "type": "INT",
+        "b_length": 1,
+        "index": [
+          346,
+          346
+        ]
+      },
+      "frequency_low_limit": {
+        "type": "FLOAT",
+        "b_length": 4,
+        "index": [
+          347,
+          350
+        ]
+      },
+      "frequency_high_limit": {
+        "type": "FLOAT",
+        "b_length": 4,
+        "index": [
+          351,
+          354
+        ]
+      },
+      "data_point_counts": {
+        "type": "INT",
+        "b_length": 4,
+        "index": [
+          355,
+          358
+        ]
+      },
+      "pulse_counts": {
+        "type": "INT",
+        "b_length": 4,
+        "index": [
+          359,
+          362
+        ]
+      },
+      "sampling_rate": {
+        "type": "BIGINT",
+        "b_length": 8,
+        "index": [
+          363,
+          370
+        ]
+      },
+      "discharge_type_probability": {
+        "type": "JSON",
+        "b_length": 20,
+        "index": [
+          371,
+          378
+        ]
+      },
+      "background_file_name": {
+        "type": "VARCHAR",
+        "b_length": 54,
+        "index": [
+          379,
+          432
+        ]
+      },
+      "reserved_place": {
+        "type": "VARCHAR",
+        "b_length": 79,
+        "index": [
+          433,
+          511
+        ]
+      }
+    },
+    "Sampledata": {
+      "pulse_date": {
+        "type": "FLOAT",
+        "b_length": 4
+      },
+      "pulse_data": {
+        "type": "INT",
+        "b_length": 4
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "socket.io-client": "^4.7.2"
+  },
+  "database": {
+    "host_name": "47.104.102.28",
+    "user_name": "admin",
+    "user_password": "wgz123456",
+    "db_name": "pd_db"
+  },
+  "database_": {
+    "host_name": "localhost",
+    "user_name": "root",
+    "user_password": "123456",
+    "db_name": "pulsedata"
+  },
+  "database1": {
+    "host_name": "localhost",
+    "user_name": "root",
+    "user_password": "123456",
+    "db_name": "pulsedata"
+  }
+}

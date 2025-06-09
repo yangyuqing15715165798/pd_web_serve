@@ -1,0 +1,5 @@
+MySQL information
+host_name = localhost
+user_name = root
+user_password = 123456
+db_name = pulsedata
