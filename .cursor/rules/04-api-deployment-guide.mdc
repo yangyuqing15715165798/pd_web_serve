@@ -1,0 +1,59 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# API和部署指南
+
+## API端点
+
+系统提供多个API端点，定义在 [main.py](mdc:main.py) 和 [pddetectionapp/pddetect.py](mdc:pddetectionapp/pddetect.py) 中：
+
+1. **主页** - `GET /`
+   - 返回系统首页HTML
+   
+2. **WebSocket** - `WebSocket /ws`
+   - 用于实时数据交换
+   - 支持文本和二进制数据
+
+3. **数据处理** - `POST /api/data/process`
+   - 用于异步处理大批量数据
+   - 使用后台任务进行处理
+
+4. **局部放电API** - `POST /pd/api/predict`
+   - 接收局部放电数据，返回预测结果
+
+## 部署指南
+
+系统可以在开发或生产环境中部署：
+
+### 开发环境
+
+使用Uvicorn启动服务：
+
+```bash
+# 使用Python直接运行main.py
+python main.py
+
+# 或使用Uvicorn
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
+```
+
+### 生产环境
+
+1. **使用Uvicorn（Windows）**:
+   ```bash
+   uvicorn main:app --host 0.0.0.0 --port 8000 --workers 4
+   ```
+
+2. **使用Gunicorn（Linux/macOS）**:
+   ```bash
+   gunicorn main:app -w 4 -k uvicorn.workers.UvicornWorker -b 0.0.0.0:8000
+   ```
+
+## 文档访问
+
+启动服务后，可通过以下URL访问自动生成的API文档：
+
+- Swagger UI：`http://localhost:8000/docs`
+- ReDoc：`http://localhost:8000/redoc`

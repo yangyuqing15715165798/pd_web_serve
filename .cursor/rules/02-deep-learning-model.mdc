@@ -1,0 +1,34 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# 深度学习模型
+
+## 模型结构
+
+本项目使用双向LSTM(Long Short-Term Memory)网络结合注意力机制进行局部放电检测和分类。主要模型定义在 [pddetectionapp/pddetect.py](mdc:pddetectionapp/pddetect.py) 文件中。
+
+核心组件：
+
+1. **注意力机制** - `Attn` 类实现了注意力层，用于在序列数据中识别重要特征
+2. **LSTM网络** - `Bi_lstm` 类实现了主要的网络结构，包括：
+   - LSTM层处理时序信息
+   - 注意力层提取关键特征
+   - 全连接层进行分类
+
+## 预测流程
+
+1. 数据预处理 - 使用已保存的缩放器标准化输入数据
+2. 模型加载 - 从保存的权重文件加载预训练模型
+3. 推理过程 - 将预处理后的数据输入模型进行预测
+4. 后处理 - 解析输出结果，返回分类标签
+
+## 模型使用
+
+模型可以通过以下方式使用：
+
+- 同步函数 `PD_detect_sync`
+- 异步函数 `PD_detect`
+- WebSocket接口（实时处理）
+- HTTP API接口（批量处理）
